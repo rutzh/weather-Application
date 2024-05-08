@@ -1,0 +1,12 @@
+body{
+    
+}
+.weather-app{
+    display: block;
+ margin: auto 0;
+ background-color: rgb(237, 231, 231); 
+ padding: 30px;
+ border: none;
+ border-radius: 10px;
+ box-shadow: 5px 5px 5px rgb(143, 70, 70);
+}
