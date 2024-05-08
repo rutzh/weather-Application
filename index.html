@@ -1,63 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Application</title>
-    <link rel="stylesheet" href="src/index.css" />
+    <link rel="stylesheet" href="src/index.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="weather-app">
-      <header>
-        <form>
-          <input
-            type="search"
-            placeholder="Enter city..."
-            required
-            class="search-input"
-          />
-          <input type="submit" value="Search" class="search-button" />
-        </form>
-        
-      </header>
-      <main>
-        <div class="weather-app-data">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="weather-app">
+<header>
+<form>
+    <input type="search" placeholder="Enter city..." required class="search-input">
+    <input type="submit" value="Search" class="search-button">
+</form>
+<hr>
+</header>
+<main>
+    <div class="weather-app-data">
         <div>
-          <h1 class="weather-app-city">Utopia</h1>
+   <h1>Utopia</h1> 
+   
+    <p class="weather-app-details">
 
-          <p class="weather-app-details">
-            <span >Wednesday 14:39 </span>
-            ,
-            <span >overcast clouds </span>
-
-            <br />
-            Humidity :
-            <strong > 77%</strong>
-            , wind:
-            <strong >4.12km/hr</strong>
-          </p>
-         </div> 
-          <div class="current-temperature">
-            
-            🌤️13°C 
-
-          </div>
+<span id="time" >Wednesday 14:39 </span> 
+  , 
+ <span id="description">overcast clouds </span>  
+ 
+<br>
+Humidity :
+<strong id="humidity"> 77%</strong>
+, wind:
+<strong id="wind-speed">4.12km/hr</strong> 
+</p>
 </div>
-        
-      </main>
+<div class="weather-app-temperature-container">
+    <div class="weather-app-icon">
+        <img src="src/sunny.png" class="weather-app-icon" width="70px" height="70px">
+    
+   <span class="weather-app-temperature" id="temperature">12°C</span> 
+   </div>
+</div>
+</main>
 
-      <footer>
-        This project was coded by <a href="#">Rue</a> , open-sourced on
-        <a href="#" target="_blank"> Github </a> and hosted on
-        <a href="#" target="_blank">Netlify</a>.
-      </footer>
-    </div>
-  </body>
+<footer>
+    This project was coded by <a href="#" >Rue</a> ,  open-sourced on <a href="#" target="_blank"> Github </a> and hosted on <a href="#" target="_blank">Netlify</a>.
+</footer>
+  </div>  
+</body>
 </html>
