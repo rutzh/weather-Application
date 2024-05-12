@@ -20,11 +20,10 @@ wind.innerHTML= `${response.data.wind.speed} km/hr`;
 let date = new Date(response.data.time * 1000);
 let currentDate = document.querySelector("#current-date");
 currentDate.innerHTML = formatDate(date)
-/*
-let weatherIcon = document.querySelector("#weather-app-icon");
-weatherIcon.innerHTML = response.data.condition.icon_url;
-*/
-}
+
+let weatherIcon = document.querySelector("#icon");
+weatherIcon.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
+}``
 
 
 function searchCity(cityName) {
